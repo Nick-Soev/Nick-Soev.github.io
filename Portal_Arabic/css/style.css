@@ -1,0 +1,33 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+} 
+.title {
+  color: #6d6d70;
+  font-size: 44px;
+  font-weight: bold;
+}
+.wrapper {
+  position: relative;
+}
+.wrapper__up {
+  display: flex;
+  position: sticky;
+  float: right;
+  right: 5%;
+  top: 85%;
+  width: 100px;
+  height: 100px;
+  margin: 20px 0;
+  border-radius: 50%;
+  background: #fff;
+  align-items: center;
+}
+.wrapper__up a {
+  display: flex;
+  padding: 30px;
+}

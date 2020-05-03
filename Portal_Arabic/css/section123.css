@@ -1,0 +1,125 @@
+                    /*first__section*/
+.first-section {
+  background: url(/image/main.jpg) center/cover;
+  min-height: 885px;
+  display: flex;
+}
+.first-section__title, .first-section__subtitle {
+  position: relative;
+  top: 28%;
+}
+.first-section__title {
+  color: #fff;
+  font-size: 58px;
+  line-height: 80px;
+  font-weight: bold;
+  text-shadow:  0 0 15px rgba(0, 0, 0, 0.555);
+  z-index: 2;
+}
+.first-section__subtitle {
+  color: #fff;
+  font-size: 45px;
+  font-weight: lighter;
+  line-height: 80px;
+  letter-spacing: 1px;
+  text-shadow:  0 0 15px rgba(0, 0, 0, 0.555);
+  margin: -50px 0 0;
+  z-index: 1;
+}
+.first-section__subtitle span {
+  color: #bbedff;
+  font-weight: bold;
+  font-size: 110px;
+  text-shadow:  none;
+  margin: 0 5px 0 0;
+}
+.first-section__slaider {
+}
+                    /*second__section*/
+.second-section__row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0 90px;
+  margin: 0 -30px;
+}
+.second-section__column {
+  display: flex;
+  flex: 1 1 50%;
+  padding: 0 30px;
+}
+.second-section__body {
+  padding: 20px 30px 0;
+}
+.second-section__body p{
+  color: #6d6e71;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: lighter;
+  text-align: justify;
+}
+.second-section__title {
+  color: #6d6e71;
+  font-size: 26px;
+  line-height: 24px;
+  font-weight: bold;
+  margin: 0 0 30px;
+}                   
+                    /*third__section*/
+.third__border-top {
+  background: url(/image/border.svg) top no-repeat;
+  width: 100%;
+  height: 22px;
+}   
+.third__card-main {
+  padding: 70px 0 0;
+  justify-content: center;
+}
+.third__card-main-body {
+  justify-items: center;
+  align-self: center;
+}
+.third__card-main-body p {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 300;
+}
+.third__row {
+  display: flex;
+  padding: 0 0 110px;
+}
+.third__card {
+  color: #6d6e71;
+  display: flex;
+  margin: 0 0 90px;
+}
+.third__card:last-child {
+  margin: 0;
+}
+.third__card-img {
+  flex: 0 0 20%;
+  text-align: center;
+}
+.third__card-body {
+  margin: 0 0 0 30px;
+}
+.third__card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.third__card-body p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  margin: 20px 0 0;
+  text-align: justify;
+}
+.third__colomn {
+  flex: 0 1 50%;
+}
+.third__colomn-border {
+  flex: none;
+  width: 2px;
+  min-height: 100%;
+  background: #eaeced;
+  margin: 0 90px;
+}                 
