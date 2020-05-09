@@ -1,6 +1,6 @@
                     /*first__section*/
 .first-section {
-  background: url(/image/main.jpg) center/cover;
+  background: url(../image/main.jpg) center/cover;
   min-height: 885px;
   display: flex;
 }
@@ -64,7 +64,7 @@
 }                   
                     /*third__section*/
 .third__border-top {
-  background: url(/image/border.svg) top no-repeat;
+  background: url(../image/border.svg) top no-repeat;
   width: 100%;
   height: 22px;
 }   
