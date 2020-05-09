@@ -65,7 +65,7 @@
 .middle__logo {
   width: 403px;
   height: 93px;
-  background-image: url(/ico/ico_header/logo.jpg);
+  background-image: url(../ico/ico_header/logo.jpg);
   margin: 60px 0;
   display: flex;
   justify-content: center;
@@ -88,22 +88,22 @@
   display: flex;
 }
 .middle__phone {
-  background: url(/ico/ico_header/phone.svg) 0 0 no-repeat;
+  background: url(../ico/ico_header/phone.svg) 0 0 no-repeat;
 }
 .middle__phone:hover {
-  background: url(/ico/ico_header/phone2.svg) 0 0 no-repeat;
+  background: url(../ico/ico_header/phone2.svg) 0 0 no-repeat;
 } 
 .middle__location {
-  background: url(/ico/ico_header/location.svg) 0 0 no-repeat;
+  background: url(../ico/ico_header/location.svg) 0 0 no-repeat;
 }
 .middle__location:hover {
-  background: url(/ico/ico_header/location2.svg) 0 0 no-repeat;
+  background: url(../ico/ico_header/location2.svg) 0 0 no-repeat;
 }
 .middle__mail {
-  background: url(/ico/ico_header/mail.svg) 0 0 no-repeat;
+  background: url(../ico/ico_header/mail.svg) 0 0 no-repeat;
 }  
 .middle__mail:hover {
-  background: url(/ico/ico_header/mail2.svg) 0 0 no-repeat;
+  background: url(../ico/ico_header/mail2.svg) 0 0 no-repeat;
 }    
 .middle_border {
   background-color: #babbbd;
@@ -133,7 +133,7 @@
 }
 .bottom__link a:hover {
   color: #2eb0e4;
-  background: url(/ico/ico_header/active.svg) bottom  no-repeat;
+  background: url(../ico/ico_header/active.svg) bottom  no-repeat;
 }
 .bottom__border {
   width: 1px;
