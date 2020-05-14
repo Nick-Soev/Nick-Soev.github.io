@@ -1,0 +1,598 @@
+
+@import "mixins"; 
+
+body {
+  font-family: $text-font;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.input-group {
+  margin: 5px;
+  position: relative;
+
+  &__icon {
+    color: $text-color;
+    font-size: 14px;
+    position: absolute;
+    padding: 18px 14px;
+  }
+}
+input {
+  color: $title-color;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: $subtitle-font;
+  padding: 0 15px 0 40px;
+  width: 280px;
+  min-height: 48px;
+  border-radius: 2px;
+  transition: all .2s linear;
+  
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  &:focus {
+    box-shadow: 0 5px 5px #000;
+  }
+}
+button {
+  @include btn(11px 45px);
+  min-height: 48px;
+ 
+  &:focus {
+    box-shadow: 0 5px 5px #000;
+  }
+}
+.nav {
+  @include nav();
+}
+.nav-header a{
+  color: $text-color;
+}
+.nav-footer a{
+  color: $title-color;
+}
+                    //header
+
+.header {
+  
+		&__row {
+      display: flex;
+      justify-content: space-between;
+      height: 95px;
+      align-items: center;
+      
+		}
+}
+
+                    //main-article
+
+.main-article {
+  width: 100%;
+  min-height: 590px;
+  background: $main-color;
+  text-align: center;
+  position: relative;
+		&__row {
+      padding: 100px 0 0;
+		}
+
+		&__title {
+      h1 {
+        @include title(#fff, 35px);
+      }
+      p {
+        @include text(#fff, 35px);
+        font-size: 16px;
+        font-weight: 300;
+      }
+		}
+                         //form..................
+		&__row-form {
+      margin: 25px 0;
+      
+      }
+      &__form {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    
+    &__slider {
+      bottom: -60px;
+      left: 50%;
+      transform:translate(-50%);
+      position: absolute;
+    }
+  
+  }
+
+                    //service-article
+
+.service {
+  padding: 200px 0 80px;
+
+	&__row-title {
+    text-align: center;
+	}
+
+	&__title h2{
+    @include title($title-color, 30px) ;
+	}
+  &__title p {
+    color: $title-color;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+	&__row-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 90px -30px 0;
+  }
+    
+  &__item-colomn {
+    flex: 0 1 50%;
+  }
+
+	&__item {
+    display: flex;
+    margin: 0 30px 70px;
+	}
+
+	&__item-icon {
+    color: $main-color;
+    min-width: 85px;
+	}
+
+	&__item-text span{
+    color: $title-color;
+    font-size: 16px;
+    font-family: $subtitle-font;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+  }
+
+  &__item-text p {
+    @include text($text-color, 22px);
+    margin: 0 0 5px;
+  }
+}
+
+                    //about us-article 
+
+.about-us {
+  min-width: 100%;
+  height: 625px;
+  display: flex;
+
+  &__image {
+    flex: 0 0 50%;
+    background: url(../img/section/Layer27.jpg) center/cover;
+  }
+
+  &__bg {
+    flex: 0 0 50%;
+    height: 100%;
+    background: $second-color;
+    align-items: center;
+    display: flex;
+  }
+
+  &__body {
+    max-width: 600px;
+    padding: 0 15px 0 80px;
+  }
+
+  &__title {
+    @include title(#fff, 30px);
+  }
+
+  &__text {
+    @include text(#fff, 24px);
+    margin: 30px 0;
+  }
+
+  &__btn a{
+    @include btn(17px 30px);
+    display: inline-block;
+    border: 1px #b1b1b1 solid;
+
+  }
+}
+
+                      //price-article 
+
+.price {
+ background: #e8edf2;
+ padding: 140px 0 190px;
+ text-align: center;
+  &__title h2{
+    @include title($title-color, 30px);
+  }
+  &__title p {
+    color: #7a878c;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: $subtitle-font;
+  }
+
+  &__row {
+    display: flex;
+    margin: 80px -5px 0;
+  }
+
+  &__wrap {
+    flex: 1 1 33.333%;
+    padding: 0 5px;
+  }
+
+  &__card {
+    background: #fff;
+    padding: 55px 30px 50px;
+    border: 1px #b1b1b16c solid;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: all .1s linear;
+
+    &:hover  {
+      transition: all .5s linear;
+      background: $main-color;
+      transform: scale(1.1);
+      div{
+        color: #fff;
+      }
+    }
+  }
+
+  &__card-title {
+    color: #838a93;
+    font-size: 25px;
+    font-family: $subtitle-font;
+    margin: 0 0 30px;
+  }
+
+  &__card-price {
+    color: $second-color;
+    font-size: 60px;
+    font-family: $subtitle-font;
+    font-weight: bold;
+  }
+  &__card-price sup {
+    font-size:30px;
+  }
+
+  &__card-subprice {
+    color: #838a93;
+    font-family: $subtitle-font;
+    font-weight: 300;
+    line-height: 22px;
+    margin: 0 0 30px;
+  }
+
+  &__card-text {
+    color: #b5b9bf;
+    font-size: 14px;
+    font-family: $subtitle-font;
+    padding: 15px 0;
+    border-top: 1px #b1b1b16c solid;
+  }
+
+  &__card-btn a{
+    @include btn(16px 20px);
+    display: inline-block;
+    margin: 35px 0 0;
+  }
+}
+
+                      //work-article 
+
+.work {
+  text-align: center;
+  padding: 150px 0;
+
+		&__title h2 {
+      @include title($title-color, 30px);
+		}
+    &__title p {
+      color: #7a878c;
+      font-size: 18px;
+      line-height: 22px;
+      font-family: $subtitle-font;
+    }
+
+		&__row {
+      display: flex;
+      margin: 80px -25px 90px;
+      position: relative;
+		}
+
+		&__wrap {
+      display: flex;
+      flex: 1 1 25%;
+      padding: 0 25px;
+		}
+    &__wrap-arrow1 {
+      z-index: 2;
+      position: absolute;
+      top: -10%;
+      left: 20%;
+    }
+    &__wrap-arrow2 {
+      z-index: 2;
+      position: absolute;
+      top: 20%;
+      left: 45%;
+      transform: rotate(180deg);
+    }
+    &__wrap-arrow3 {
+      z-index: 2;
+      position: absolute;
+      top: -10%;
+      left: 70%;
+    }
+		&__card {
+      padding: 0 20px;
+		}
+
+		&__card-image {
+      color: $main-color;
+      margin: 0 0 100px;
+		}
+
+		&__card-title span {
+      color: $title-color;
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: $subtitle-font;
+    }
+    &__card-title p {
+      color: $text-color;
+      font-size: 13px;
+      padding: 20px 0 0;
+      line-height: 24px;
+    }
+
+		&__btn a{
+      @include btn(17px 27px);
+      display: inline-block;
+		}
+}
+
+                      //client-article 
+
+.client {
+  background: $second-color;
+  padding: 140px 0 160px;
+  text-align: center;
+
+	&__title h2{
+    @include title(#fff, 30px);
+	}
+
+  &__title p {
+    color: #fff;
+    line-height: 24px;
+  }
+
+	&__row {
+    display: flex;
+    padding: 50px 0 0;
+    margin: -10px -15px;
+    flex-wrap: wrap;
+	}
+
+	&__wrap {
+    flex: 0 1 50%;
+    padding: 10px 15px;
+	}
+
+	&__card {
+    display: flex;
+    background: #fff;
+    border-radius: 2px;
+    padding: 50px 30px;
+	}
+
+	&__card-image img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+	}
+
+	&__card-body {
+    margin: 0 0 0 30px;
+    text-align: left;
+	}
+
+	&__card-text {
+    color: $title-color;
+    font-size: 13px;
+    line-height: 22px;
+    position: relative;
+    ::before {
+      content: " \f10d ";
+      position: absolute;
+      left: -20px;
+      font-family: $icon-font;
+      opacity: .6;
+    }
+    ::after {
+      content: "\f10e "; 
+      margin: 0 0 0 15px;
+      font-family: $icon-font;
+      opacity: .6;
+      
+    }
+	}
+
+	&__card-subtitle {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $text-color;
+    font-family: $subtitle-font;
+    margin: 30px 0 0;
+    span {
+      color:#db7635;
+    }
+	}
+}
+
+                      // newslatter-article
+
+  .newsletter {
+    text-align: center;
+    padding: 150px 0 70px;
+
+	&__title h2 {
+    @include title($title-color, 30px);
+  }
+  
+  &__title p {
+    color: #7a878c;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: $subtitle-font;
+  }
+
+  &__row-form {
+    margin: 40px 0 50px;
+  }
+
+	&__form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    .input-group {
+      border: 1px $text-color solid;
+      border-radius: 2px;
+    }
+    input {
+      min-width: 390px;
+    }
+    .input-group:last-child {
+      border: none;
+    }
+
+	}
+
+	&__row {
+    background: url(../img/section/map.png) center no-repeat;
+    width: 100%;
+    height: 570px;
+    padding: 60px 0;
+	}
+
+	&__card {
+    background: #414c51;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    border: 2px #fff solid;
+    
+
+    &:before {
+      content: "";
+      bottom: -15px;
+      position: absolute;
+      border-left: 12px solid transparent;
+      border-right: 12px solid  transparent;
+      border-top: 24px solid #414c51;
+      
+    }
+	}
+
+	&__card-title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    font-family: $subtitle-font;
+    margin: 0 0 20px;
+    font-weight: bold;
+	}
+
+	&__card-text {
+    color: #afb6b8;
+    font-size: 13px;
+    line-height: 24px;
+
+    a {
+      color: $second-color;
+    }
+	}
+}
+                  
+                      //footer  
+
+.footer {
+  text-align: center;
+  
+  &__row {
+    border-top: 1px #bdb9b9 solid;
+    padding: 60px 0 50px;
+  }
+
+  &__nav {
+    margin: 0 auto;
+    display: inline-block;
+  }
+
+  &__phone {
+    margin: 30px 0 25px;  
+  }
+  &__phone a {
+    color: $title-color;
+    font-size: 22px;
+    font-family: $subtitle-font;
+    transition: all .1s linear;
+    position: relative;
+    &::before {
+      content: "\f095";
+      font-family: $icon-font;
+      left: -25px;
+      bottom: 0;
+      position: absolute;
+    }
+    &:hover {
+      color: $second-color;
+    }
+  }
+
+  &__link a{
+    color: $main-color;
+    padding: 0px 5px;
+    font-size: 19px;
+    transition: all .1s linear;
+    &:hover {
+      color: $second-color;
+    }
+  }
+
+  &__row-bottom {
+    width: 100%;
+    background: $main-color;
+
+    p {
+      color: #fff;
+      font-size: 13px;
+      padding: 17px 0;
+    }
+  }
+}
+
+

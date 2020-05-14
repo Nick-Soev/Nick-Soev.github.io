@@ -1,0 +1,77 @@
+                                    //fonts.....................
+
+$title-font: 'Gotham-Black';
+$subtitle-font: 'lato', sans-serif;
+$text-font: 'Open Sans', sans-serif;
+$icon-font: 'FontAwesome';
+
+                                    //color.....................
+
+$title-color: #414c51;
+$text-color: #7b7b7b;
+
+$main-color: #7e9cc7;
+$second-color: #f78f19;
+                                    
+                                    //---mixin---text.....................
+
+@mixin title ($color, $font-size){
+  color: $color;
+  font-size: $font-size;
+  font-family: $title-font;
+  text-transform: uppercase;
+}    
+@mixin text ($color, $line-height) {
+  color: $color;
+  font-size: 13px;
+  line-height: $line-height;
+  font-family: $text-font;
+}
+
+                                    //btn
+
+@mixin btn ($padd...) {
+  color: #fff;
+  background: $second-color;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'lato';
+  padding: $padd;
+  
+  border-radius: 2px;
+  transition: all .1s linear;
+
+  &:hover {
+    background: darken($second-color, 10);
+    box-shadow: 0 5px 7px   #000; 
+  }
+
+  &:active {
+    background: darken($second-color, 5);
+    box-shadow: 0 2px 2px  #000; 
+  }
+
+}
+
+                                    //nav
+
+@mixin nav () {
+  display: flex;
+  a {
+    // color: $color;
+    font-size: 14px;
+    font-family: $subtitle-font;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    transition: all .1s linear;
+    
+    &:hover{
+      color: #fff;
+      background: $second-color;
+      border-radius: 2px;
+    }
+  }
+}
+
+
+
