@@ -2,7 +2,7 @@
   <defs>
     <style>
       .cls-1, .cls-2 {
-        fill: #a8c94e;
+        fill: #7e9cc7;
         fill-rule: evenodd;
       }
 
@@ -15,12 +15,12 @@
       }
     </style>
     <filter id="filter" x="785" y="3502.28" width="10.719" height="10.5" filterUnits="userSpaceOnUse">
-      <feFlood result="flood" flood-color="#83a0ca"/>
+      <feFlood result="flood" flood-color="#7e9cc7"/>
       <feComposite result="composite" operator="in" in2="SourceGraphic"/>
       <feBlend result="blend" in2="SourceGraphic"/>
     </filter>
     <filter id="filter-2" x="902.938" y="3500" width="11.062" height="11" filterUnits="userSpaceOnUse">
-      <feFlood result="flood" flood-color="#83a0ca"/>
+      <feFlood result="flood" flood-color="#7e9cc7"/>
       <feComposite result="composite" operator="in" in2="SourceGraphic"/>
       <feBlend result="blend" in2="SourceGraphic"/>
     </filter>
