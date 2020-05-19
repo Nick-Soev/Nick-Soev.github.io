@@ -103,11 +103,27 @@ button {
         flex-wrap: wrap;
       }
     
-    &__slider {
-      bottom: -60px;
-      left: 50%;
-      transform:translate(-50%);
+    .slider {
       position: absolute;
+      width: 700px;
+      left: 50%;
+      bottom: -100px;
+      transform: translateX(-50%);
+    }  
+    &__slider {
+      padding: 0 0 20px;
+    }
+
+    &__slider-image {
+      flex: 0 0 650px;
+      height: 350px;
+      display: flex;
+      overflow: hidden;
+    }
+
+    &__slider-image img {
+      margin: 0 auto;
+      height: 100%;
     }
   
   }
